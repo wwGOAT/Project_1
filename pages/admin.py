@@ -1,4 +1,9 @@
+# pages/admin.py
 from django.contrib import admin
-from pages.models import Contact
-# Register your models here.
-admin.site.register(Contact)
+from .models import ContactModel
+
+@admin.register(ContactModel)
+class ContactModelAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'subject', 'created_at',)
+    list_filter = ('email', 'created_at',)
+    search_fields = ('name', 'email', 'subject', 'created_at',)
