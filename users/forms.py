@@ -29,3 +29,8 @@ class LoginForm(AuthenticationForm):
     
 class EmailVerificationForm(forms.Form):
    code_verfiy = forms.CharField(max_length=6)
+
+class AccountUpdateForm(forms.ModelForm):
+    class Meta:
+        model = UserModel
+        exclude = ('user',)

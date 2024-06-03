@@ -14,3 +14,20 @@ class VerficationCodeModel(models.Model):
     class Meta:
         verbose_name = "VerficationCode"
         verbose_name_plural = "VerficationCodes"
+
+class AccountModel(models.Model):
+    user = models.OneToOneField(UserModel, on_delete=models.CASCADE, related_name="account")
+    full_name = models.CharField(max_length=255, blank=True, null=True)
+    company = models.CharField(max_length=255, blank=True, null=True)
+    city = models.CharField(max_length=255, blank=True, null=True)
+    address = models.CharField(max_length=255, blank=True, null=True)
+    post_code = models.CharField(max_length=255, blank=True, null=True)
+    phone = models.CharField(max_length=50, blank=True, null=True)
+    country = models.CharField(max_length=255, blank=True, null=True)
+
+    def __str__(self):
+        return self.full_name
+    
+    class Meta:
+        verbose_name = "Account"
+        verbose_name_plural = "Accounts"

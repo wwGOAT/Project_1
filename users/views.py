@@ -1,11 +1,10 @@
 from django.forms import BaseModelForm
-from django.http import HttpResponse
 from django.shortcuts import  redirect, render
-from django.views.generic import FormView, CreateView
-from .forms import RegisterForm, LoginForm, EmailVerificationForm
+from django.views.generic import FormView, CreateView, UpdateView
+from .forms import RegisterForm, LoginForm, EmailVerificationForm, AccountUpdateForm
 from django.contrib import messages
 from random import randint
-from .models import VerficationCodeModel
+from .models import VerficationCodeModel, AccountModel
 from django.core.mail import send_mail
 from conf import settings
 from datetime import datetime
@@ -14,6 +13,7 @@ from datetime import timedelta
 from django.contrib.auth import get_user_model
 from django.urls import reverse_lazy
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 UserModel = get_user_model()
 def send_code_email(user):
@@ -103,3 +103,15 @@ class LoginView(FormView):
             
     def form_invalid(self, form):
         print(form.errors)
+
+class AccountView(LoginRequiredMixin, UpdateView):
+    template_name = 'user-account.html'
+    form_class = AccountUpdateForm
+    success_url = reverse_lazy('users:user_account')
+    context_object_name = 'account'
+    login_url = reverse_lazy('users:user_login')
+
+    def get_object(self, queryset=None):
+        account, _ = AccountModel.objects.get_or_create(user=self.request.user)
+        return account
+

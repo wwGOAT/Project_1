@@ -1,4 +1,3 @@
-
 {% load static %}
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -147,15 +146,15 @@
                         <div class="menu navbar collapse navbar-collapse">
                             <ul class="menu-top navbar-nav">
                                 <li>
-                                    <a href="#" class="parent">Home</a>
+                                    <a href="{% url 'pages:home' %}" class="parent">Home</a>
                                     
                                 </li>
                                 <li>
-                                    <a href="#" class="parent">Blog</a>
-                                    
+                                    <a href="#{% url 'blogs:blogs' %}" class="parent">Blog</a>
                                 </li>
                                 <li class="nav-link">
-                                    <a href="#" class="parent">Page</a>
+                                    <a href="{% url 'product:products' %}" class="parent">Products</a>
+                                   
                                 </li>
                                 <li>
                                     <a href="contact.html" class="parent">Contact US</a>
