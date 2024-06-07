@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -146,15 +147,15 @@
                         <div class="menu navbar collapse navbar-collapse">
                             <ul class="menu-top navbar-nav">
                                 <li>
-                                    <a href="{% url 'pages:home' %}" class="parent">Home</a>
+                                    <a href="#" class="parent">Home</a>
                                     
                                 </li>
                                 <li>
-                                    <a href="#{% url 'blogs:blogs' %}" class="parent">Blog</a>
+                                    <a href="#" class="parent">Blog</a>
+                                    
                                 </li>
                                 <li class="nav-link">
-                                    <a href="{% url 'product:products' %}" class="parent">Products</a>
-                                   
+                                    <a href="#" class="parent">Page</a>
                                 </li>
                                 <li>
                                     <a href="contact.html" class="parent">Contact US</a>
@@ -570,7 +571,7 @@
                                                                         </div>
                                                                         <div class="product-buttons d-flex">
                                                                             <form action="#" method="post" class="formAddToCart">
-                                                                                <a class="add-to-cart" href="#" data-button-action="add-to-cart">
+                                                                                <a class="add-to-cart" href="{% url 'product:products_cart' pk=product.id%}?next={{request.path}}?{{request.urlencode}}" data-button-action="add-to-cart">
                                                                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart
                                                                                 </a>
                                                                             </form>

@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
@@ -25,20 +24,20 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
 
     <!-- libs CSS -->
-    <link rel="stylesheet" href="{% static 'libs/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/font-awesome/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/nivo-slider/css/nivo-slider.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/nivo-slider/css/animate.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/nivo-slider/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/font-material/css/material-design-iconic-font.min.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/slider-range/css/jslider.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/owl-carousel/assets/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/slick-slider/css/slick.css' %}">
-    <link rel="stylesheet" href="{% static 'libs/slick-slider/css/slick-theme.css' %}">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/style.css">
+    <link rel="stylesheet" href="libs/font-material/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="libs/slider-range/css/jslider.css">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/slick-slider/css/slick.css">
+    <link rel="stylesheet" href="libs/slick-slider/css/slick-theme.css">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reponsive.css">
 </head>
 
 <body class="product-checkout checkout-cart">
@@ -56,7 +55,7 @@
                 <!-- logo -->
                 <div class="mobile-logo">
                     <a href="index-2.html">
-                        <img class="logo-mobile img-fluid" src="{% static 'img/home/logo-mobie.png' %}" alt="Prestashop_Furnitica">
+                        <img class="logo-mobile img-fluid" src="img/home/logo-mobie.png" alt="Prestashop_Furnitica">
                     </a>
                 </div>
 
@@ -90,7 +89,7 @@
                                         <tr>
                                             <td class="product-image">
                                                 <a href="product-detail.html">
-                                                    <img src="{% static 'img/product/5.jpg' %}" alt="Product">
+                                                    <img src="img/product/5.jpg" alt="Product">
                                                 </a>
                                             </td>
                                             <td>
@@ -138,7 +137,7 @@
                     <div class="col-sm-2 col-md-2 d-flex align-items-center">
                         <div id="logo">
                             <a href="index-2.html">
-                                <img src="{% static 'img/home/logo.png' %}" alt="logo" class="img-fluid">
+                                <img src="img/home/logo.png" alt="logo" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -325,22 +324,22 @@
                                         <ul class="list-inline">
                                             <li class="list-inline-itemcurrent">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas.jpg' %}" alt="English" width="16" height="11">
+                                                    <img class="img-fluid" src="img/home/home1-flas.jpg" alt="English" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas2.jpg' %}" alt="Italiano" width="16" height="11">
+                                                    <img class="img-fluid" src="img/home/home1-flas2.jpg" alt="Italiano" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas3.jpg' %}" alt="Français" width="16" height="11">
+                                                    <img class="img-fluid" src="img/home/home1-flas3.jpg" alt="Français" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas4.jpg' %}" alt="Español" width="16" height="11">
+                                                    <img class="img-fluid" src="img/home/home1-flas4.jpg" alt="Español" width="16" height="11">
                                                 </a>
                                             </li>
                                         </ul>
@@ -361,7 +360,7 @@
                                                 <tr>
                                                     <td class="product-image">
                                                         <a href="product-detail.html">
-                                                            <img src="{% static 'img/product/5.jpg' %}" alt="Product">
+                                                            <img src="img/product/5.jpg" alt="Product">
                                                         </a>
                                                     </td>
                                                     <td>
@@ -456,15 +455,51 @@
                                             </ul>
                                             <div class="tab-content">
                                                 <div class="tab-pane fade in active show" id="checkout-guest-form" role="tabpanel">
-                                                    <form action="{% url 'orders:order' %}" id="customer-form" class="js-customer-form" method="post">
-                                                        {% csrf_token %}
+                                                    <form action="#" id="customer-form" class="js-customer-form" method="post">
                                                         <div>
                                                             <input type="hidden" name="id_customer" value="">
                                                             <div class="form-group row">
-                                                                <input class="form-control" name="addres" type="text" placeholder="Address">
+                                                                <input class="form-control" name="firstname" type="text" placeholder="Full name">
                                                             </div>
                                                             <div class="form-group row">
-                                                                <input class="form-control" name="phone" type="text" placeholder="Phone">
+                                                                <input class="form-control" name="email" type="email" placeholder="Email">
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <input class="form-control" name="email" type="email" placeholder="Phone">
+                                                            </div>
+                                                            <div class="desc-password">
+                                                                <span class="font-weight-bold">Create an account</span>
+                                                                <span>(optional)</span>
+                                                                <br>
+                                                                <span class="text-muted">And save time on your next order!</span>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="input-group js-parent-focus">
+                                                                    <input class="form-control js-child-focus" name="password" type="password" placeholder=" Password">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hidden-comment">
+                                                                <div class="form-group row">
+                                                                    <input class="form-control" name="birthday" type="text" value="" placeholder=" Birthdate">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row check-input">
+                                                                <span class="custom-checkbox d-inline-flex">
+                                                                    <input class="check" name="optin" type="checkbox" value="1">
+                                                                    <label class="label-absolute">Receive offers from our partners</label>
+                                                                </span>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <span class="custom-checkbox d-inline-flex check-input">
+                                                                    <input class="check" name="newsletter" type="checkbox" value="1">
+                                                                    <label>Sign up for our newsletter
+                                                                        <br>
+                                                                        <em>You may unsubscribe at any moment. For that purpose,
+                                                                            please find our contact info in the legal notice.
+                                                                        </em>
+                                                                    </label>
+                                                                </span>
+                                                            </div>
                                                         </div>
                                                         <div class="clearfix">
                                                             <div class="row">
@@ -478,8 +513,54 @@
                                                         </div>
                                                     </form>
                                                 </div>
+                                                <div class="tab-pane fade" id="checkout-login-form" role="tabpanel">
+                                                    <form id="login-form" action="#" method="post" class="customer-form">
+                                                        <div>
+                                                            <input type="hidden" name="back" value="">
+                                                            <div class="form-group row">
+                                                                <input class="form-control" name="email" type="email" placeholder="Email">
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="input-group js-parent-focus">
+                                                                    <input class="form-control js-child-focus js-visible-password" name="password" type="password" placeholder="Password">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="forgot-password">
+                                                                    <a href="user-reset-password.html" rel="nofollow">
+                                                                        Forgot your password?
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                            <div class="row">
+                                                                <button class="continue btn btn-primary pull-xs-right" name="continue" data-link-action="sign-in" type="submit" value="1">
+                                                                    Continue
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
+                                        </div>
+                                        <div class="checkout-personal-step">
+                                            <h3 class="step-title h3">
+                                                <span class="step-number">2</span>Addresses
+                                            </h3>
+                                        </div>
+                                        <div class="checkout-personal-step">
+                                            <h3 class="step-title h3">
+                                                <span class="step-number">3</span>Shipping Method
+                                            </h3>
+                                        </div>
+                                        <div class="checkout-personal-step">
+                                            <h3 class="step-title h3">
+                                                <span class="step-number">4</span>Payment
+                                            </h3>
+                                        </div>
                                     </div>
+                                    <div class="cart-grid-right col-xs-12 col-lg-3">
                                         <div class="cart-summary">
                                             <div class="cart-detailed-totals">
                                                 <div class="cart-summary-products">
@@ -510,19 +591,19 @@
                                             <ul>
                                                 <li>
                                                     <div class="block-reassurance-item">
-                                                        <img src="{% static 'img/product/check1.png' %}" alt="Security policy (edit with Customer reassurance module)">
+                                                        <img src="img/product/check1.png" alt="Security policy (edit with Customer reassurance module)">
                                                         <span>Security policy (edit with Customer reassurance module)</span>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="block-reassurance-item">
-                                                        <img src="{% static 'img/product/check2.png' %}" alt="Delivery policy (edit with Customer reassurance module)">
+                                                        <img src="img/product/check2.png" alt="Delivery policy (edit with Customer reassurance module)">
                                                         <span>Delivery policy (edit with Customer reassurance module)</span>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="block-reassurance-item">
-                                                        <img src="{% static 'img/product/check3.png' %}" alt="Return policy (edit with Customer reassurance module)">
+                                                        <img src="img/product/check3.png" alt="Return policy (edit with Customer reassurance module)">
                                                         <span>Return policy (edit with Customer reassurance module)</span>
                                                     </div>
                                                 </li>
@@ -548,7 +629,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="logo-footer">
-                                        <img src="{% static 'img/home/logo.png' %}" alt="img">
+                                        <img src="img/home/logo.png" alt="img">
                                     </p>
                                     <p class="content-logo">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
                                         ut labore et dolore magna aliqua. Ut enim ad minim
@@ -579,7 +660,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="img-payment ">
-                                        <img class="img-fluid" src="{% static 'img/home/payment-footer.png' %}" alt="img">
+                                        <img class="img-fluid" src="img/home/payment-footer.png" alt="img">
                                     </p>
                                 </div>
                             </div>
@@ -695,7 +776,7 @@
                                             Payment accept
                                         </div>
                                         <div class="payment-image">
-                                            <img class="img-fluid" src="{% static 'img/home/payment.png' %}" alt="img">
+                                            <img class="img-fluid" src="img/home/payment.png" alt="img">
                                         </div>
                                     </div>
                                     <!-- Popup newsletter -->
@@ -737,7 +818,7 @@
                     <ul class="menu level1">
                         <li class="item  parent">
                             <a href="#" class="hasicon" title="SIDE TABLE">
-                                <img src="{% static 'img/home/table-lamp.png' %}" alt="img">SIDE TABLE</a>
+                                <img src="img/home/table-lamp.png" alt="img">SIDE TABLE</a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#SIDE-TABLE" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
                                 <i class="zmdi zmdi-plus"></i>
@@ -787,7 +868,7 @@
                         </li>
                         <li class="item  parent group">
                             <a href="#" class="hasicon" title="FI">
-                                <img src="{% static 'img/home/fireplace.png' %}" alt="img">FIREPLACE
+                                <img src="img/home/fireplace.png" alt="img">FIREPLACE
                             </a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#fi" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
@@ -1039,7 +1120,7 @@
                         </li>
                         <li class="item group-category-img parent group">
                             <a href="#" class="hasicon" title="TABLE LAMP">
-                                <img src="{% static 'img/home/table-lamp.png' %}" alt="img">TABLE LAMP</a>
+                                <img src="img/home/table-lamp.png" alt="img">TABLE LAMP</a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#table-lamp" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
                                 <i class="zmdi zmdi-plus"></i>
@@ -1157,76 +1238,76 @@
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="OTTOMAN">
-                                <img src="{% static 'img/home/ottoman.png' %}" alt="img">OTTOMAN
+                                <img src="img/home/ottoman.png" alt="img">OTTOMAN
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="ARMCHAIR">
-                                <img src="{% static 'img/home/armchair.png' %}" alt="img">ARMCHAIR
+                                <img src="img/home/armchair.png" alt="img">ARMCHAIR
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CUSHION">
-                                <img src="{% static 'img/home/cushion.png' %}" alt="img">CUSHION
+                                <img src="img/home/cushion.png" alt="img">CUSHION
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="COFFEE TABLE">
-                                <img src="{% static 'img/home/coffee_table.png' %}" alt="img">COFFEE TABLE</a>
+                                <img src="img/home/coffee_table.png" alt="img">COFFEE TABLE</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="SHELF">
-                                <img src="{% static 'img/home/shelf.png' %}" alt="img">SHELF
+                                <img src="img/home/shelf.png" alt="img">SHELF
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="SOFA">
-                                <img src="{% static 'img/home/sofa.png' %}" alt="img">SOFA
+                                <img src="img/home/sofa.png" alt="img">SOFA
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="DRESSING TABLE">
-                                <img src="{% static 'img/home/dressing.png' %}" alt="img">DRESSING TABLE</a>
+                                <img src="img/home/dressing.png" alt="img">DRESSING TABLE</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="WINDOWN CURTAIN">
-                                <img src="{% static 'img/home/windown.png' %}" alt="img">WINDOWN CURTAIN</a>
+                                <img src="img/home/windown.png" alt="img">WINDOWN CURTAIN</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CHANDELIER">
-                                <img src="{% static 'img/home/chandelier.png' %}" alt="img">CHANDELIER
+                                <img src="img/home/chandelier.png" alt="img">CHANDELIER
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CEILING FAN">
-                                <img src="{% static 'img/home/ceiling_fan.png' %}" alt="img">CEILING FAN</a>
+                                <img src="img/home/ceiling_fan.png" alt="img">CEILING FAN</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="WARDROBE">
-                                <img src="{% static 'img/home/wardrobe.png' %}" alt="img">WARDROBE
+                                <img src="img/home/wardrobe.png" alt="img">WARDROBE
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="FLOOR LAMP">
-                                <img src="{% static 'img/home/floor_lamp.png' %}" alt="img">FLOOR LAMP</a>
+                                <img src="img/home/floor_lamp.png" alt="img">FLOOR LAMP</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="VASE-FLOWER ">
-                                <img src="{% static 'img/home/vase-flower.png' %}" alt="img">VASE-FLOWER
+                                <img src="img/home/vase-flower.png" alt="img">VASE-FLOWER
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED">
-                                <img src="{% static 'img/home/bed.png' %}" alt="img">BED
+                                <img src="img/home/bed.png" alt="img">BED
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED GIRL">
-                                <img src="{% static 'img/home/bed.png' %}" alt="img">BED GIRL</a>
+                                <img src="img/home/bed.png" alt="img">BED GIRL</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED BOY">
-                                <img src="{% static 'img/home/bed.png' %}" alt="img">BED BOY</a>
+                                <img src="img/home/bed.png" alt="img">BED BOY</a>
                         </li>
                     </ul>
                 </div>
@@ -1388,19 +1469,19 @@
     </div>
 
     <!-- Vendor JS -->
-    <script src="{% static 'libs/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'libs/popper/popper.min.js' %}"></script>
-    <script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'libs/nivo-slider/js/jquery.nivo.slider.js' %}"></script>
-    <script src="{% static 'libs/owl-carousel/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'libs/slider-range/js/tmpl.js' %}"></script>
-    <script src="{% static 'libs/slider-range/js/jquery.dependClass-0.1.js' %}"></script>
-    <script src="{% static 'libs/slider-range/js/draggable-0.1.js' %}"></script>
-    <script src="{% static 'libs/slider-range/js/jquery.slider.js' %}"></script>
-    <script src="{% static 'libs/slick-slider/js/slick.min.js' %}"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/popper/popper.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/nivo-slider/js/jquery.nivo.slider.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="libs/slider-range/js/tmpl.js"></script>
+    <script src="libs/slider-range/js/jquery.dependClass-0.1.js"></script>
+    <script src="libs/slider-range/js/draggable-0.1.js"></script>
+    <script src="libs/slider-range/js/jquery.slider.js"></script>
+    <script src="libs/slick-slider/js/slick.min.js"></script>
 
     <!-- Template JS-->
-    <script src="{% static 'js/theme.js' %}"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 

@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -159,20 +160,20 @@
                             <div class="myaccount-title">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <a href="#acount" data-toggle="collapse" class="acount">
-                                    <span>Settings</span>
+                                    <span>My Account</span>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </a>
                             </div>
                             <div id="acount" class="collapse">
                                 <div class="account-list-content">
                                     <div>
-                                        <a class="login" href="" rel="nofollow" title="Log in to your customer account">
+                                        <a class="login" href="user-acount.html" rel="nofollow" title="Log in to your customer account">
                                             <i class="fa fa-cog"></i>
                                             <span>My Account</span>
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="login" href="{% url 'users:login' %}=" rel="nofollow" title="Log in to your customer account">
+                                        <a class="login" href="{% url 'users:login' %}" rel="nofollow" title="Log in to your customer account">
                                             <i class="fa fa-sign-in"></i>
                                             <span>Sign in</span>
                                         </a>
@@ -184,7 +185,7 @@
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="check-out" href="{% url 'orders:checkout' %}" rel="nofollow" title="Checkout">
+                                        <a class="check-out" href="product-checkout.html" rel="nofollow" title="Checkout">
                                             <i class="fa fa-check" aria-hidden="true"></i>Checkout
                                         </a>
                                     </div>
@@ -399,8 +400,8 @@
                                                 <tr>
                                                     <td colspan="3" class="d-flex justify-content-center">
                                                         <div class="cart-button">
-                                                            <a href="" title="View Cart">View Cart</a>
-                                                            <a href="{% url 'orders:checkout' %}" title="Checkout">Checkout</a>
+                                                            <a href="product-cart.html" title="View Cart">View Cart</a>
+                                                            <a href="product-checkout.html" title="Checkout">Checkout</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -2363,6 +2364,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="block">
                                             <div class="owl-carousel owl-theme testimonial-type-home3">
+                                                {% for fedbacks in fedbacks %}
                                                 <div class="item type-one text-center">
                                                     <div class="textimonial-image d-flex justify-content-center">
                                                         <i class="icon-testimonial"></i>
@@ -2370,75 +2372,16 @@
                                                     <div class="desc-testimonial">
                                                         <div class="testimonial-content">
                                                             <div class="text">
-                                                                <p>"Liquam quis risus viverra, ornare ipsum vitae, congue tellus.
-                                                                    Vestibulum nunc lorem, scelerisque a tristique non, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum"</p>
+                                                                <p>{{fedbacks.fedbacks}}</p>
                                                             </div>
                                                         </div>
                                                         <div class="testimonial-info">
-                                                            <h5 class="mt-0 box-info">David Jame</h5>
-                                                            <p class="box-dress">DESIGNER</p>
+                                                            <h5 class="mt-0 box-info">{{fedbacks.name}}</h5>
+                                                            <p class="box-dress">{{fedbacks.position}}</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="item type-one">
-                                                    <div class="textimonial-image d-flex justify-content-center">
-                                                        <i class="icon-testimonial"></i>
-                                                    </div>
-                                                    <div class="desc-testimonial">
-                                                        <div class="testimonial-content">
-                                                            <div class="text">
-                                                                <p>"Liquam quis risus viverra, ornare ipsum vitae, congue tellus.
-                                                                    Vestibulum nunc lorem, scelerisque a tristique non, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum"</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="testimonial-info">
-                                                            <h5 class="mt-0 box-info">Max Control</h5>
-                                                            <p class="box-dress">DEVELOPER</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item type-one">
-                                                    <div class="textimonial-image d-flex justify-content-center">
-                                                        <i class="icon-testimonial"></i>
-                                                    </div>
-                                                    <div class="desc-testimonial">
-                                                        <div class="testimonial-content">
-                                                            <div class="text">
-                                                                <p>"Liquam quis risus viverra, ornare ipsum vitae, congue tellus.
-                                                                    Vestibulum nunc lorem, scelerisque a tristique non, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum"</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="testimonial-info">
-                                                            <h5 class="mt-0 box-info">John Do</h5>
-                                                            <p class="box-dress">CSS -HTML</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item type-one">
-                                                    <div class="textimonial-image d-flex justify-content-center">
-                                                        <i class="icon-testimonial"></i>
-                                                    </div>
-                                                    <div class="desc-testimonial">
-                                                        <div class="testimonial-content">
-                                                            <div class="text">
-                                                                <p>"Liquam quis risus viverra, ornare ipsum vitae, congue tellus.
-                                                                    Vestibulum nunc lorem, scelerisque a tristique non, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum, accumsan
-                                                                    ornare eros. Nullam sapien metus, volutpat dictum"</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="testimonial-info">
-                                                            <h5 class="mt-0 box-info">Elizabeth Pham</h5>
-                                                            <p class="box-dress">DEVELOPER</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                {% endfor %}
                                             </div>
                                         </div>
                                     </div>

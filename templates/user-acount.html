@@ -1,4 +1,4 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
@@ -7,7 +7,7 @@
 <html lang="en">
 
 
-<!-- user-register11:10-->
+<!-- user-acount11:10-->
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
@@ -25,25 +25,24 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
 
     <!-- libs CSS -->
-    <link rel="stylesheet" href="{%static 'libs/bootstrap/css/bootstrap.min.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/font-awesome/css/font-awesome.min.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/nivo-slider/css/nivo-slider.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/nivo-slider/css/animate.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/nivo-slider/css/style.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/font-material/css/material-design-iconic-font.min.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/slider-range/css/jslider.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/owl-carousel/assets/owl.carousel.min.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/slick-slider/css/slick.css'%}">
-    <link rel="stylesheet" href="{%static 'libs/slick-slider/css/slick-theme.css'%}">
+    <link rel="stylesheet" href="{%static 'libs/bootstrap/css/bootstrap.min.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/font-awesome/css/font-awesome.min.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/nivo-slider/css/nivo-slider.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/nivo-slider/css/animate.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/nivo-slider/css/style.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/font-material/css/material-design-iconic-font.min.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/slider-range/css/jslider.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/owl-carousel/assets/owl.carousel.min.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/slick-slider/css/slick.css' %} ">
+    <link rel="stylesheet" href="{%static 'libs/slick-slider/css/slick-theme.css' %} ">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/reponsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/reponsive.css' %}">
 </head>
 
-<body class="user-register blog">
+<body class="user-acount">
     <header>
-
         <!-- header left mobie -->
         <div class="header-mobile d-md-none">
             <div class="mobile hidden-md-up text-xs-center d-flex align-items-center justify-content-around">
@@ -56,7 +55,7 @@
                 <!-- logo -->
                 <div class="mobile-logo">
                     <a href="index-2.html">
-                        <img class="logo-mobile img-fluid" src="{%static 'img/home/logo-mobie.png'%}" alt="Prestashop_Furnitica">
+                        <img class="logo-mobile img-fluid" src="{%static 'img/home/logo-mobie.png' %} " alt="Prestashop_Furnitica">
                     </a>
                 </div>
 
@@ -90,7 +89,7 @@
                                         <tr>
                                             <td class="product-image">
                                                 <a href="product-detail.html">
-                                                    <img src="{%static 'img/product/5.jpg'%}" alt="Product">
+                                                    <img src="{%static 'img/product/5.jpg' %} " alt="Product">
                                                 </a>
                                             </td>
                                             <td>
@@ -116,8 +115,8 @@
                                         <tr>
                                             <td colspan="3" class="d-flex justify-content-center">
                                                 <div class="cart-button">
-                                                    <a href="{%url 'users:cart'}" title="View Cart">View Cart</a>
-                                                    <a href="{%url 'orders:checkout'}" title="Checkout">Checkout</a>
+                                                    <a href="product-cart.html" title="View Cart">View Cart</a>
+                                                    <a href="product-checkout.html" title="Checkout">Checkout</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -138,7 +137,7 @@
                     <div class="col-sm-2 col-md-2 d-flex align-items-center">
                         <div id="logo">
                             <a href="index-2.html">
-                                <img src="{%static 'img/home/logo.png'%}" alt="logo" class="img-fluid">
+                                <img src="{%static 'img/home/logo.png' %} " alt="logo" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -325,22 +324,22 @@
                                         <ul class="list-inline">
                                             <li class="list-inline-itemcurrent">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas.jpg'%}" alt="English" width="16" height="11">
+                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas.jpg' %} " alt="English" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas2.jpg'%}" alt="Italiano" width="16" height="11">
+                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas2.jpg' %} " alt="Italiano" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas3.jpg'%}" alt="Français" width="16" height="11">
+                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas3.jpg' %} " alt="Français" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas4.jpg'%}" alt="Español" width="16" height="11">
+                                                    <img class="img-fluid" src="{%static 'img/home/home1-flas4.jpg' %} " alt="Español" width="16" height="11">
                                                 </a>
                                             </li>
                                         </ul>
@@ -361,7 +360,7 @@
                                                 <tr>
                                                     <td class="product-image">
                                                         <a href="product-detail.html">
-                                                            <img src="{%static 'img/product/5.jpg'%}" alt="Product">
+                                                            <img src="{%static 'img/product/5.jpg' %} " alt="Product">
                                                         </a>
                                                     </td>
                                                     <td>
@@ -415,88 +414,74 @@
                     <div class="breadcrumb">
                         <ol>
                             <li>
-                                <a href="{% url 'pages:home' %}">
+                                <a href="#">
                                     <span>Home</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{% url 'users:user_register' %}">
-                                    <span>Register</span>
+                                <a href="#">
+                                    <span>My Account</span>
                                 </a>
                             </li>
                         </ol>
                     </div>
                 </div>
             </nav>
-        </div>
 
-        <!-- main -->
-        <div id="wrapper-site">
-            <div class="container">
-                <div class="row">
-                    <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol">
-                        <div id="main">
-                            <div id="content" class="page-content">
-                                <div class="register-form text-center">
-                                    <h1 class="text-center title-page">Update Account</h1>
-                                    <form action="{% url 'users:user_register' %}" id="customer-form" class="js-customer-form" method="post">
-                                        {% csrf_token %}
-                                        <div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="full_name" type="text" placeholder="Full Name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="country" type="text" placeholder="Country">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="city" type="text" placeholder="City">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="postcode" type="text" placeholder="Postcode">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="phone" type="text" placeholder="Phone">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="address" type="text" placeholder="Address">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="company" type="text" placeholder="Company">
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                        </div>
-                                        <div class="clearfix">
-                                            <div>
-                                                <button class="btn btn-primary" data-link-action="sign-in" type="submit">
-                                                    Create Account
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+            <div class="acount head-acount">
+                <div class="container">
+                    <div id="main">
+                        <h1 class="title-page">My Account</h1>
+                        <div class="content" id="block-history">
+                            <table class="std table">
+                                <tbody>
+                                    <tr>
+                                        <th class="first_item">My Name :</th>
+                                        <td>{{user.username}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Company :</th>
+                                        <td>TivaTheme</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Address :</th>
+                                        <td>123 canberra Street, New York, USA</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">City :</th>
+                                        <td>New York</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Postal/Zip Code :</th>
+                                        <td>10001</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Phone :</th>
+                                        <td>0123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Country:</th>
+                                        <td>USA</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <button class="btn btn-primary" data-link-action="sign-in" type="submit">
+                            view Address
+                        </button>
+                        <div class="order">
+                            <h4>Order
+                                <span class="detail">History</span>
+                            </h4>
+                            <p>You haven't placed any orders yet.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
-
     <!-- footer -->
     <footer class="footer-one">
         <div class="inner-footer">
@@ -507,7 +492,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="logo-footer">
-                                        <img src="{%static 'img/home/logo.png'%}" alt="img">
+                                        <img src="{%static 'img/home/logo.png' %} " alt="img">
                                     </p>
                                     <p class="content-logo">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
                                         ut labore et dolore magna aliqua. Ut enim ad minim
@@ -538,7 +523,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="img-payment ">
-                                        <img class="img-fluid" src="{%static 'img/home/payment-footer.png'%}" alt="img">
+                                        <img class="img-fluid" src="{%static 'img/home/payment-footer.png' %} " alt="img">
                                     </p>
                                 </div>
                             </div>
@@ -654,7 +639,7 @@
                                             Payment accept
                                         </div>
                                         <div class="payment-image">
-                                            <img class="img-fluid" src="{%static 'img/home/payment.png'%}" alt="img">
+                                            <img class="img-fluid" src="{%static 'img/home/payment.png' %} " alt="img">
                                         </div>
                                     </div>
                                     <!-- Popup newsletter -->
@@ -696,7 +681,7 @@
                     <ul class="menu level1">
                         <li class="item  parent">
                             <a href="#" class="hasicon" title="SIDE TABLE">
-                                <img src="{%static 'img/home/table-lamp.png'%}" alt="img">SIDE TABLE</a>
+                                <img src="{%static 'img/home/table-lamp.png' %} " alt="img">SIDE TABLE</a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#SIDE-TABLE" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
                                 <i class="zmdi zmdi-plus"></i>
@@ -746,7 +731,7 @@
                         </li>
                         <li class="item  parent group">
                             <a href="#" class="hasicon" title="FI">
-                                <img src="{%static 'img/home/fireplace.png'%}" alt="img">FIREPLACE
+                                <img src="{%static 'img/home/fireplace.png' %} " alt="img">FIREPLACE
                             </a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#fi" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
@@ -998,7 +983,7 @@
                         </li>
                         <li class="item group-category-img parent group">
                             <a href="#" class="hasicon" title="TABLE LAMP">
-                                <img src="{%static 'img/home/table-lamp.png'%}" alt="img">TABLE LAMP</a>
+                                <img src="{%static 'img/home/table-lamp.png' %} " alt="img">TABLE LAMP</a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#table-lamp" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
                                 <i class="zmdi zmdi-plus"></i>
@@ -1116,76 +1101,76 @@
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="OTTOMAN">
-                                <img src="{%static 'img/home/ottoman.png'%}" alt="img">OTTOMAN
+                                <img src="{%static 'img/home/ottoman.png' %} " alt="img">OTTOMAN
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="ARMCHAIR">
-                                <img src="{%static 'img/home/armchair.png'%}" alt="img">ARMCHAIR
+                                <img src="{%static 'img/home/armchair.png' %} " alt="img">ARMCHAIR
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CUSHION">
-                                <img src="{%static 'img/home/cushion.png'%}" alt="img">CUSHION
+                                <img src="{%static 'img/home/cushion.png' %} " alt="img">CUSHION
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="COFFEE TABLE">
-                                <img src="{%static 'img/home/coffee_table.png'%}" alt="img">COFFEE TABLE</a>
+                                <img src="{%static 'img/home/coffee_table.png' %} " alt="img">COFFEE TABLE</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="SHELF">
-                                <img src="{%static 'img/home/shelf.png'%}" alt="img">SHELF
+                                <img src="{%static 'img/home/shelf.png' %} " alt="img">SHELF
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="SOFA">
-                                <img src="{%static 'img/home/sofa.png'%}" alt="img">SOFA
+                                <img src="{%static 'img/home/sofa.png' %} " alt="img">SOFA
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="DRESSING TABLE">
-                                <img src="{%static 'img/home/dressing.png'%}" alt="img">DRESSING TABLE</a>
+                                <img src="{%static 'img/home/dressing.png' %} " alt="img">DRESSING TABLE</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="WINDOWN CURTAIN">
-                                <img src="{%static 'img/home/windown.png'%}" alt="img">WINDOWN CURTAIN</a>
+                                <img src="{%static 'img/home/windown.png' %} " alt="img">WINDOWN CURTAIN</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CHANDELIER">
-                                <img src="{%static 'img/home/chandelier.png'%}" alt="img">CHANDELIER
+                                <img src="{%static 'img/home/chandelier.png' %} " alt="img">CHANDELIER
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CEILING FAN">
-                                <img src="{%static 'img/home/ceiling_fan.png'%}" alt="img">CEILING FAN</a>
+                                <img src="{%static 'img/home/ceiling_fan.png' %} " alt="img">CEILING FAN</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="WARDROBE">
-                                <img src="{%static 'img/home/wardrobe.png'%}" alt="img">WARDROBE
+                                <img src="{%static 'img/home/wardrobe.png' %} " alt="img">WARDROBE
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="FLOOR LAMP">
-                                <img src="{%static 'img/home/floor_lamp.png'%}" alt="img">FLOOR LAMP</a>
+                                <img src="{%static 'img/home/floor_lamp.png' %} " alt="img">FLOOR LAMP</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="VASE-FLOWER ">
-                                <img src="{%static 'img/home/vase-flower.png'%}" alt="img">VASE-FLOWER
+                                <img src="{%static 'img/home/vase-flower.png' %} " alt="img">VASE-FLOWER
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED">
-                                <img src="{%static 'img/home/bed.png'%}" alt="img">BED
+                                <img src="{%static 'img/home/bed.png' %} " alt="img">BED
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED GIRL">
-                                <img src="{%static 'img/home/bed.png'%}" alt="img">BED GIRL</a>
+                                <img src="{%static 'img/home/bed.png' %} " alt="img">BED GIRL</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED BOY">
-                                <img src="{%static 'img/home/bed.png'%}" alt="img">BED BOY</a>
+                                <img src="{%static 'img/home/bed.png' %} " alt="img">BED BOY</a>
                         </li>
                     </ul>
                 </div>
@@ -1239,8 +1224,8 @@
                                     <i class="zmdi zmdi-plus"></i>
                                 </span>
                                 <a href="#" title="Blog">
-                                    <i class="fa fa-address-book" aria-hidden="true"></i>Blog</a>
-
+                                    <i class="fa fa-address-book" aria-hidden="true"></i>Blog
+								</a>
                                 <div class="subCategory collapse" id="blog" aria-expanded="true" role="status">
                                     <ul>
                                         <li class="item">
@@ -1270,7 +1255,8 @@
                                     <i class="zmdi zmdi-plus"></i>
                                 </span>
                                 <a href="#" title="Page">
-                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>page</a>
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>page
+								</a>
                                 <div class="subCategory collapse" id="page" aria-expanded="true" role="status">
                                     <ul class="group-page">
                                         <li class="item container group">
@@ -1326,7 +1312,8 @@
                             </li>
                             <li class="item has-sub">
                                 <a href="contact.html" title="Contact us">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>Contact us</a>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>Contact us
+								</a>
                             </li>
                         </ul>
                     </div>
@@ -1347,21 +1334,21 @@
     </div>
 
     <!-- Vendor JS -->
-    <script src="{%static 'libs/jquery/jquery.min.js'%}"></script>
-    <script src="{%static 'libs/popper/popper.min.js'%}"></script>
-    <script src="{%static 'libs/bootstrap/js/bootstrap.min.js'%}"></script>
-    <script src="{%static 'libs/nivo-slider/js/jquery.nivo.slider.js'%}"></script>
-    <script src="{%static 'libs/owl-carousel/owl.carousel.min.js'%}"></script>
-    <script src="{%static 'libs/slider-range/js/tmpl.js'%}"></script>
-    <script src="{%static 'libs/slider-range/js/jquery.dependClass-0.1.js'%}"></script>
-    <script src="{%static 'libs/slider-range/js/draggable-0.1.js'%}"></script>
-    <script src="{%static 'libs/slider-range/js/jquery.slider.js'%}"></script>
-    <script src="{%static 'libs/slick-slider/js/slick.min.js'%}"></script>
+    <script src="{%static 'libs/jquery/jquery.min.js' %} "></script>
+    <script src="{%static 'libs/popper/popper.min.js' %} "></script>
+    <script src="{%static 'libs/bootstrap/js/bootstrap.min.js' %} "></script>
+    <script src="{%static 'libs/nivo-slider/js/jquery.nivo.slider.js' %} "></script>
+    <script src="{%static 'libs/owl-carousel/owl.carousel.min.js' %} "></script>
+    <script src="{%static 'libs/slider-range/js/tmpl.js' %} "></script>
+    <script src="{%static 'libs/slider-range/js/jquery.dependClass-0.1.js' %} "></script>
+    <script src="{%static 'libs/slider-range/js/draggable-0.1.js' %} "></script>
+    <script src="{%static 'libs/slider-range/js/jquery.slider.js' %} "></script>
+    <script src="{%static 'libs/slick-slider/js/slick.min.js' %} "></script>
 
     <!-- Template JS -->
-    <script src="{%static 'js/theme.js'%}"></script>
+    <script src="{%static 'js/theme.js' %}"></script>
 </body>
 
 
-<!-- user-register11:10-->
+<!-- user-acount11:10-->
 </html>
